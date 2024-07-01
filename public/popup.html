@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <title>Website Blocker Extension</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h1>Website Blocker Extension</h1>
+  <label>
+    <input type="checkbox" id="toggleBlocking">
+    Enable Blocking
+  </label>
+  <p>Enter websites to block:</p>
+  <input type="text" id="blockInput">
+  <button id="blockButton">Block</button>
+  <h2>Blocked Sites:</h2>
+  <ul id="blockedSitesList"></ul>
+
+  <a href="blocked-sites.html" target="_blank">Manage Blocked Sites</a>
+  <script src="pop.js"></script>
+</body>
+</html>
